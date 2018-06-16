@@ -1,0 +1,19 @@
+<!--pages/user/user.wxml-->
+<text>pages/user/user.wxml</text>
+
+<view class=''>
+<view class="" >
+   <image src='{{user.headImageUrl}}'></image>
+   <text>{{user.nickname}}</text>
+  </view>
+  
+  <view>
+     <block wx:for="{{ bookPage.list }}">
+      <view class="focus-one-item"  data-book-Id="{{item.id}}" bind:tap="clickBook">
+         <image src="{{item.coverUrl}}" class="slide-image" />
+          <text>{{item.author}}</text>
+          <text>{{item.intro}}</text>
+      </view>
+    </block>
+  </view>
+</view>

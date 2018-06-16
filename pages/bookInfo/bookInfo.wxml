@@ -1,0 +1,33 @@
+<!--书籍主要内容页  -->
+
+<scroll-view scroll-y="true" class="container">
+  <view class="bookInfo">
+    <view class='image-view'>
+      <image class="book-image" src='{{book.coverUrl}}'></image>
+    </view>
+    <view class='bookDetail'>
+      <text class="detailItem">书名： {{book.bookName}}</text>
+      <text class="detailItem">作者： {{book.author}}</text>
+    </view>
+    <view class='intro-view'>
+    <text class='title'>简介：</text><text class="content intro">{{book.intro}}</text></view>
+  </view>
+  <view class="reviewList">
+    <block wx:for="{{reviewsPage.list}}">
+      <view class="review" data-id="{{ item.id }}" bind:tap="reviewDetails">
+      
+        <text wx:if='{{item.title}}' class='title'>{{item.title}}</text>
+        <text class='content reviewDetail'>{{ item.details }}</text>
+      </view>
+      <view class='user-info'>
+        <view class='avator'>
+        <image class="head-image" src='{{item.user.headUrl}}'></image>
+          <text class="userInfo-detail">{{ item.user.nickName  }}</text>
+         <text class="userInfo-detail">{{item.createTime}}</text>
+        </view>
+      </view>
+      
+    </block>
+  </view>
+  <button class='book-add' bind:tap='addbook' >加入书架</button>
+</scroll-view>

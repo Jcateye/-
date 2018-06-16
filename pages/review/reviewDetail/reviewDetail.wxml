@@ -1,0 +1,27 @@
+<!--pages/review/reviewDetail/reviewDetail.wxml-->
+<!--书评详情页  -->
+<view>
+   <view class=""   >
+        <text>{{ review.bookReview.title }}</text>
+        <text>{{ review.bookReview.datails }}</text>
+        <text>{{review.bookReview.createTime}}</text>
+      </view>
+      <view  bind-tap="tUserInfo" data-reader-id="{{ review.bookReview.readerId }}">
+        <image class="" src='{{review.headImageUrl}}' ></image>
+        <text>{{ review.nickname  }}</text>
+      </view>
+
+ <view class="" >
+    <block wx:for="{{sonReviewPage.list}}">
+      <view class=""   >
+        <text>{{ item.bookReview.datails }}</text>
+        <text>{{item.bookReview.createTime}}</text>
+      </view>
+      <view  bind-tap="tUserInfo" data-reader-id="{{ item.bookReview.readerId }}">
+        <image class="" src='{{item.headImageUrl}}' ></image>
+        <text>{{ item.nickname  }}</text>
+      </view>
+    </block>
+  </view>
+
+</view>

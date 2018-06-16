@@ -1,0 +1,123 @@
+/**index.wxss**/
+.container{
+  padding: 0;
+  font-size: 15rpx;
+  background: #F0F4F3;
+  color: #000;
+}
+
+.container .search{
+  width: 735rpx;
+  height: 65rpx;
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  background: #2A8CE5;
+}
+.container .search-left{
+  flex: 8;
+  background: #4EA3E7;
+  text-align: left;
+}
+.container .search-left input{
+  display: inline-block;
+  height: 65rpx;
+  font-size: 26rpx;
+}
+.search-placeholder{
+  color: #8CCEFD;
+  line-height: 20rpx;
+}
+ .image{
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx 15rpx 15rpx 20rpx;
+  folat: right;
+}
+
+.book-focus{
+  width: 750prx;
+  height: 550rpx;
+  padding: 10rpx 15rpx 40rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eeeeee;
+}
+
+.title-view{
+  height: 40rpx;
+}
+
+.button{
+  margin: 0rpx;
+  height: 40rpx;
+  width:30rpx;
+  float: right;
+  font-size: 30rpx;
+  background-color: #888888;
+}
+
+.focus-list{
+    height: 480rpx;
+    width:750rpx;
+    /* padding:30rpx 30rpx 20rpx;
+    margin:7rpx 0 6rpx 0; */
+    background:#ffffff;
+    
+    /* border-top:1px solid #eee;
+    border-bottom:1px solid #eee; */
+    /* box-shadow:0 2px 5px #eeeeee; */
+
+}
+
+.focus-list .book-image{
+  height: 146rpx;
+  width: 80rpx;
+  border: 4rpx solid #efeaea;
+  box-shadow: 5px 5px 3px #888888;
+  
+  
+}
+
+.focus{
+  height: 175rpx;
+  border-top: 5rpx solid #ffffff;
+}
+
+.focus-item-left{
+  float: left;
+  height: 175rpx;
+  width: 100rpx;
+}
+
+.focus-item-right{
+  overflow: hidden;
+  height: 175rpx;
+  width: 640rpx;
+  float: right;
+}
+
+.book-info{
+  font-size: 20rpx;
+}
+
+  
+  .bookIntro{
+    display: inline-block;
+    width: 600rpx;
+    height: 120rpx;
+    margin-right: 20rpx;
+    margin-top: 20rpx
+  }
+
+  .post {
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;  
+    border: 0 solid #ffffff;
+    border-radius: 500px;
+    box-shadow: 4px 1px 1px #cccccc;
+
+}

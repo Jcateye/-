@@ -1,0 +1,39 @@
+/* read/read.wxss */
+.container{
+  padding: 0rpx 20rpx 0rpx;
+}
+
+.title{
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.content{
+  font-size: 30rpx;
+}
+
+.button{
+  width: 26%；
+}
+
+.top{
+  float: left;
+ 
+}
+
+.down{
+  float: right;
+  
+}
+
+.post {
+    float: right;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 10px;  
+    border: 0 solid #ffffff;
+    border-radius: 500px;
+    box-shadow: 4px 1px 1px #cccccc;
+
+}

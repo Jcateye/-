@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookrack/bookrack",
+    "pages/review/review",
+    "pages/me/me",
+    "pages/bookInfo/bookInfo",
+    "pages/review/reviewDetail/reviewDetail",
+    "pages/user/user",
+    "pages/read/read",
+    "voice"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "happyreader",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#f00",
+    "position": "",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/首页.png",
+        "selectedIconPath": "image/首页绿.png"
+      },
+      {
+        "pagePath": "pages/bookrack/bookrack",
+        "iconPath": "image/书.png",
+        "selectedIconPath": "image/书黄.png"
+      },
+      {
+        "pagePath": "pages/review/review",
+        "iconPath": "image/广场.png",
+        "selectedIconPath": "image/广场蓝.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "image/我.png",
+        "selectedIconPath": "image/我绿.png"
+      }
+    ]
+  }
+}

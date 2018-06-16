@@ -1,0 +1,11 @@
+<scroll-view scroll-y="true" class="container">
+<view >
+  <block wx:for='{{bookMap.list}}'>
+    <view class= 'book-item' bind:tap='read' data-book-id='{{ item.id }}'>
+      <image src='{{item.coverUrl}}' class="book-image"></image>
+      <text class='book-info title'>{{item.bookName}}</text>
+      </view>
+  </block>
+ </view>
+<icon type="success" size="50" class="post"  bindlongtap='start' bindtouchend='stop'/>
+</scroll-view>

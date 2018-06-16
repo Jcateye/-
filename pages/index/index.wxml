@@ -1,0 +1,89 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container">
+      <view class=" search search-left ">
+          <input placeholder="搜索" placeholder-class="search-placeholder"/>
+          <image  class='image' src='../../image/search.png' bindtap='search'></image>
+      </view>
+  <view class='test'>
+  <view class="book-focus readerTotal">
+    <view class="title-view">
+      <text class='focus-title title'>阅读榜</text>
+      
+    </view>
+    <view class='focus-list'>
+      <block wx:for="{{ bookMap.readerTotalBook }}">
+        <view class="focus" data-book-Id="{{item.id}}" bind:tap="clickBook">
+          <view class="focus-item-left">
+            <image src="{{item.coverUrl}}" class="book-image" />
+           
+          </view>
+          <view class='focus-item-right'>
+           <text class='book-info title'>{{item.title}}</text>
+            <text class='book-info bookIntro'>{{item.intro}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="book-focus noteTotal">
+    <view class="title-view">
+      <text class='focus-title title'>笔记榜</text>
+    </view>
+    <view class='focus-list'>
+      <block wx:for="{{ bookMap.noteTotalBook }}">
+        <view class="focus" data-book-Id="{{item.id}}" bind:tap="clickBook">
+          <view class="focus-item-left">
+            <image src="{{item.coverUrl}}" class="book-image" />
+            
+          </view>
+          <view class='focus-item-right'>
+          <text class='book-info title'>{{item.title}}</text>
+            <text class='book-info bookIntro'>{{item.intro}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="book-focus reviewTotal">
+    <view class="title-view">
+      <text class='focus-title title'>热评榜</text>
+    </view>
+    <view class='focus-list'>
+      <block wx:for="{{ bookMap.reviewTotalBook }}">
+        <view class="focus" data-book-Id="{{item.id}}" bind:tap="clickBook">
+          <view class="focus-item-left">
+            <image src="{{item.coverUrl}}" class="book-image" />
+          
+          </view>
+          <view class='focus-item-right'>
+            <text class='book-info title'>{{item.title}}</text>
+            <text class='book-info bookIntro'>{{item.intro}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="book-focus searchTotal">
+    <view class="title-view">
+      <text class='focus-title title'>热搜榜</text>
+    </view>
+    <view class='focus-list'>
+      <block wx:for="{{ bookMap.searchTotalBook }}">
+        <view class="focus" data-book-Id="{{item.id}}" bind:tap="clickBook">
+          <view class="focus-item-left">
+            <image src="{{item.coverUrl}}" class="book-image" />
+           
+          </view>
+          <view class='focus-item-right'>
+           <text class='book-info title'>{{item.title}}</text>
+            <text class='book-info bookIntro'>{{item.intro}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  </view>
+<icon type="success" size="50" class="post" bindlongtap='start' bindtouchend='stop' style='color:{{color}}'/>
+</scroll-view>

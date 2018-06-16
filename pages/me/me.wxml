@@ -1,0 +1,72 @@
+<view class="container more">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+      <open-data class="userinfo-avatar" type="userAvatarUrl" background-size="cover"></open-data>
+    </view>
+    <view class="user-info flex-item">
+      <open-data class="userinfo-nickname" type="userNickName"></open-data>
+      <text class="edit">查看或编辑个人主页</text>
+      <!-- <button class='button' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">授权</button> -->
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的关注</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>最近浏览</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的书架</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的回复</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item">
+        <image src="../../image/首页.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的余额</text>
+      </view>
+    </view>
+
+  </view>
+</view>

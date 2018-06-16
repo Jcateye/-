@@ -1,0 +1,39 @@
+.container{
+  padding: 0;
+  font-size: 15rpx;
+  background: #F0F4F3;
+  color: #000;
+}
+
+
+.reviewList{
+  width: 735rpx;
+  
+}
+
+.review{
+  height: 175rpx;
+  border-top: 5rpx solid #ffffff;
+}
+
+.head-image{
+  display:inline-block;
+  width:45rpx;
+  height:45rpx;
+  border-radius:45rpx;
+}
+
+.userInfo-detail{
+  display:inline-block;
+  height:40rpx;
+  line-height:40rpx;
+  vertical-align:middle;
+  margin:0 0 0 15rpx;
+  color:#a0acac;
+  font-size:23rpx;
+
+}
+
+.reviewDetail{
+  font-size: 26rpx;
+}

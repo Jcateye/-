@@ -1,0 +1,15 @@
+<scroll-view scroll-y="true" class="container">
+<view >
+  <text class='title'>第 {{chapter.sequence}} 章  {{ chapter.chapterTitle}}</text>
+  <text class='content'>{{ chapter.content}}</text>
+ </view>
+ <view class='button-view'>
+  <button class='button top' bind:tap='pageUp'>上一章</button>
+ 
+  <button class='button down' bind:tap='pageDown'>下一章</button>
+ </view>
+ <button class='button catalog' >目录</button>
+ <button class='button catalog' >笔记</button>
+ <icon type="success" size="50" class="post" bindlongtap='start' bindtouchend='stop'
+ style='background-color: {{color}}'/>
+</scroll-view>

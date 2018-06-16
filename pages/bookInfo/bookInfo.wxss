@@ -1,0 +1,94 @@
+.container{
+  
+  background: #F0F4F3;
+  color: #000;
+  margin: 0 15rpx;
+}
+
+.bookInfo{
+  width: 735prx;
+  height: 750rpx;
+  padding: 10rpx 15rpx 40rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #ffffff;
+}
+.image-view{
+  float: left;
+ 
+}
+
+.book-image{
+  height: 230rpx;
+  width: 180rpx;
+  border: 4rpx solid #efeaea;
+  box-shadow: 5px 5px 3px #888888;
+}
+
+.bookDetail{
+  padding-top: 30rpx;
+  float: right;
+  height: 220rpx;
+  width: 485rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+.intro-view{
+  margin-top: 250rpx;
+  height: 500rpx;
+  width: 750rpx;
+}
+
+.detailItem,.title{
+  display: block;  
+}
+
+.content{
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 25rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:15;  
+}
+
+.reviewList{
+  width: 735rpx;
+  
+}
+
+.review{
+  height: 175rpx;
+  border-top: 5rpx solid #ffffff;
+}
+
+.head-image{
+  display:inline-block;
+  width:45rpx;
+  height:45rpx;
+  border-radius:45rpx;
+}
+
+.userInfo-detail{
+  display:inline-block;
+  height:40rpx;
+  line-height:40rpx;
+  vertical-align:middle;
+  margin:0 0 0 15rpx;
+  color:#a0acac;
+  font-size:23rpx;
+
+}
+
+.reviewDetail{
+  font-size: 26rpx;
+}
+
+.book-add {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

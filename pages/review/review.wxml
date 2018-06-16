@@ -1,0 +1,23 @@
+<scroll-view scroll-y="true" class="container">
+
+<view class="reviewList">
+    <block wx:for="{{reviewsPage.list}}">
+      <view class="review" data-id="{{ item.id }}" bind:tap="reviewDetails">
+      
+        <text wx:if='{{item.title}}' class='title'>{{item.title}}</text>
+        <text class='content reviewDetail'>{{ item.details }}</text>
+      </view>
+      <view class='user-info'>
+        <view class='avator' bind-tap="tUserInfo" data-reader-id="{{ review.readerId }}">
+        <image class="head-image" src='{{item.user.headUrl}}'></image>
+          <text class="userInfo-detail">{{ item.user.nickName  }}</text>
+         <text class="userInfo-detail">{{item.createTime}}</text>
+        </view>
+      </view>
+      
+    </block>
+  </view>
+
+
+
+</scroll-view>
